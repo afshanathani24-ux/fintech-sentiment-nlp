@@ -1,5 +1,3 @@
-# fintech-sentiment-nlp
-An NLP-driven sentiment audit of 2026 FinTech infrastructure trends, bridging the gap between MBA strategy and data analytics."
 # FinTech Sentiment Audit 2026
 
 An NLP-driven sentiment audit of 2026 FinTech infrastructure trends, bridging the gap between MBA strategy and data analytics.
@@ -15,3 +13,7 @@ This project explores the intersection of **automated financial infrastructure**
 ## Strategic Insights for PhD Research
 * **The Trust Gap:** While AI-driven risk scoring yields high technical optimism, data privacy remains a significant point of friction.
 * **Algorithmic Transparency:** This project serves as a proof-of-concept for moving beyond "The Automated Average" by identifying sentiment outliers that drive market shifts.
+
+## Visual Results
+![FinTech Sentiment Chart](image_57.png) 
+*(Note: Ensure your chart image is uploaded to the repository with this exact name)*

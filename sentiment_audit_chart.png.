@@ -1,0 +1,24 @@
+import matplotlib.pyplot as plt
+
+# Data derived from the Sentiment Audit
+categories = ['AI Risk Scoring', 'Instant Payments', 'Biometric Privacy', 'Invisible Checkout']
+# Polarity scores based on TextBlob analysis (-1 to 1)
+sentiment_scores = [0.75, 0.15, -0.42, -0.38] 
+
+# Define colors: Green for positive, Gray for neutral, Red for negative
+colors = ['#2ecc71' if x > 0.5 else '#95a5a6' if x >= 0 else '#e74c3c' for x in sentiment_scores]
+
+plt.figure(figsize=(10, 6))
+plt.bar(categories, sentiment_scores, color=colors)
+
+# Adding professional styling
+plt.axhline(0, color='black', linewidth=0.8) # Zero line
+plt.ylim(-1, 1)
+plt.title('2026 FinTech Infrastructure: Sentiment Polarity Audit', fontsize=14, fontweight='bold')
+plt.ylabel('Sentiment Score (TextBlob Polarity)', fontsize=12)
+plt.xlabel('Infrastructure Category', fontsize=12)
+plt.grid(axis='y', linestyle='--', alpha=0.6)
+
+# Save the figure to your repository folder
+plt.savefig('sentiment_audit_chart.png', dpi=300, bbox_inches='tight')
+plt.show()
